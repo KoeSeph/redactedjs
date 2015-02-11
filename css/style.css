@@ -8,7 +8,7 @@ html {
   line-height: 1.4em;
 }
 header {
-  background: #cc0000;
+  background: #ff0000;
   color: #fff;
   padding: 16px 20px;
   display: flex;
@@ -30,7 +30,7 @@ h1, .links {
 }
 .links>a:hover, .links>a:focus {
   background: #fff;
-  color: #cc0000;
+  color: #ff0000;
 }
 .content {
   width: 100%;
