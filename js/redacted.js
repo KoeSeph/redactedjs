@@ -18,8 +18,7 @@ function redacted(options){
  'homo', 'kike', 'jizz', 'kyke', 'mick', 'muff', 'paki', 'poon', 'slut', 
  'retard','twat','wank', 'cum', 'splooge', 'nigga',];
  var newStyle = _d.createElement('style'),
- style = _d.createTextNode('.redacted{color:'+'#000'+
-  ';background-color:'+options.color+';padding: 3px;}');
+ style = _d.createTextNode('.redacted{background-color:'+options.color+';padding: 3px;}');
  parentNode = _d.head;
  newStyle.appendChild(style);
  parentNode.insertBefore(newStyle, parentNode.querySelector('link'));
@@ -30,7 +29,4 @@ function redacted(options){
 for(i=0; i <= str.match(regex).length; i++){ //your >= will never return true since i was set to 0
   str = str.replace(MATCH[i], tellmebbpls());
 };
-  // for (i=0; i >= root.innerHTML.match(regex).length; i++) {
-  //   return root.innerHTML =root.innerHTML.replace(MATCH[i], tellmebbpls);
-  // };
 };
