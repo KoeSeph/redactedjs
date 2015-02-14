@@ -16,7 +16,7 @@ function redacted(options){
  'tranny', 'cunt',  'rape', 'murder', 'tits', 'piss', 'pussy', 'dick', 'cock', 
  'nigger', 'spic', 'cracker', 'coon', 'dago', 'damn', 'gook', 'heeb', 'dike',
  'homo', 'kike', 'jizz', 'kyke', 'mick', 'muff', 'paki', 'poon', 'slut', 
- 'retard','twat','wank', 'cum', 'splooge', 'nigga',];
+ 'retard','twat','wank', 'cum', 'splooge', 'nigga','you'];
  var newStyle = _d.createElement('style'),
  style = _d.createTextNode('.redacted{background-color:'+options.color+';padding: 3px;}');
  parentNode = _d.head;
@@ -26,7 +26,7 @@ function redacted(options){
  var regex = new RegExp(options.list.join('|'), 'ig');
  root.innerHTML = root.innerHTML.replace(regex, tellmebbpls);
  var str = root.innerHTML;
-for(i=0; i <= str.match(regex).length; i++){ //your >= will never return true since i was set to 0
+for(i=0; i <= str.match(regex).length; i++){
   str = str.replace(MATCH[i], tellmebbpls());
 };
 };
